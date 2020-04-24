@@ -1,0 +1,53 @@
+Ejercicio 1 
+
+use company;
+create table employee_backup;
+(
+ Fname varchar(15) NOT NULL,
+ Minit varchar NOT NULL,
+ Lname varchar(15) NOT NULL,
+ Bdate date NOT NULL,
+ Adress varchar(30) NOT NULL,
+ Sex char NOT NULL,
+ Salary int NOT NULL,
+ Super_ssn int set default 'NULL',
+ Dno int NOT NULL,
+);
+
+Insert into employee_backup;
+select * from employee;
+
+Ejercicio 2
+
+a)
+
+from accidente , persona;
+where fecha like '1989%';
+select * count id-conductor;
+
+b)
+
+Select * count accidente, persona, dueño;
+From accidente, persona.dueño;
+Where es_dueño AND id-conductor=persona AND id-conductor AND 
+persona.nombre='Santos';
+
+c)
+
+Insert into accidente(numero-informe, fecha_accidente, lugar)
+Values('0123', '199-03-15', 'Madrid')
+
+d)
+
+Delete from coche using coche, es_dueño, persona
+Where modelo='Mazda' AND persona.nombre='Santos' AND coche.matrícula=es_dueño.matrícula AND persona.nombre='Santos';
+
+e) 
+
+update participo set importe_dano=3000
+where matricula='2002BCD' AND numero-informe='AR2197'
+
+
+
+
+ 

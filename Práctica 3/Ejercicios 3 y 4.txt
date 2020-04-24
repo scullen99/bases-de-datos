@@ -1,0 +1,53 @@
+// Ejercicio 3
+
+a)
+
+Select Name
+From Student 
+where major='CS';
+
+b)
+
+Select Course.course_name
+From Course, Section
+Where Section.instructor='King' AND (Section.year='07' OR Section.year='08');
+
+c)
+
+Select "Course number", Semester, Year, "Student number", count (*)
+From Section AS S, "Grade report" AS Gr
+Where S.Section_identifier=Gr.Section_identifier AND Instructor='King'
+Group by S.Course_number, S.Semester, S.Yeat;
+
+d)
+
+Select name, course_name, course_number, credit_hours, semester, year, grade
+From 
+
+e)
+
+Insert Into Student(name, student_number, class, major)
+Values('Jhonson', 25, 1, 'Math');
+
+h)
+
+Delete from Student
+Where nombre='Smith' and student_numer='17';
+
+// Ejercicio 4
+
+c)
+
+Select e.Fname
+From Employee as e, employee as m
+where m.fname='franklin' and m.lnam='wong' and m.ssn=e.super_ssn;
+
+b)
+
+Select Fname
+From employee, dependent
+where ssn=essn and fname=dependent_name;
+
+a)
+
+select fname from employee, works_on, project where dno=5 and essn=ssn and pname='productx' and pnumber=pno and hours>10;
